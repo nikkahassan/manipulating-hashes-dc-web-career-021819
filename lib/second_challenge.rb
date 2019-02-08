@@ -6,8 +6,12 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
-  #code your solution here!
-
+data.each do |attribute, value|
   
-
-end
+  if attribute == :groceries
+    value.each do |groceries|
+      
+      puts "#{groceries}"
+    end
+  end
+  end
